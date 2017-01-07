@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Aesop For Entrepreneurs
+email: aesop@aesopforentrepreneurs.com
+description: > An exciting website
+Foo
+Bar Baz
+baseurl: ""
+url: "http://aesopforentrepreneurs.com"  site
 
-twitter_username:
-github_username:
+twitter_username: aesop
 
 # Build settings
 markdown: kramdown
