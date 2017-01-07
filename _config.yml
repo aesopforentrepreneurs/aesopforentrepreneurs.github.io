@@ -3,9 +3,10 @@ title: Aesop For Entrepreneurs
 email: "aesop@aesopforentrepreneurs.com"
 description: An exciting website
 baseurl: ""
-url: "http://aesopforentrepreneurs.com"
-
-twitter_username: aesop
+url: "http://www.aesopforentrepreneurs.com"
+description: Become a successful entrepreneur through Aesop's fables
+author: Alex Goldsborough
+keywords: Aesop, Entreprenership, Founding, Business, Fables
 
 # Build settings
 markdown: kramdown
