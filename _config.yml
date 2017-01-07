@@ -1,9 +1,9 @@
 # Site settings
 title: Aesop For Entrepreneurs
-email: aesop@aesopforentrepreneurs.com
-description: > An exciting website
+email: "aesop@aesopforentrepreneurs.com"
+description: An exciting website
 baseurl: ""
-url: "http://aesopforentrepreneurs.com"  site
+url: "http://aesopforentrepreneurs.com"
 
 twitter_username: aesop
 
