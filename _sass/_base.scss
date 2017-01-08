@@ -214,11 +214,7 @@ header {
       .row > a {
         width: 180px;
         margin-bottom: 16px;
-        &:first-child {
-          @media (min-width: 400px) {
-            margin-right: 16px;
-          }
-        }
+        margin-right: 16px;
       }
 
         @media (min-width: 768px) {
