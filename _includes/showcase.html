@@ -1,54 +1,34 @@
+{% assign text = ""   | split: "" %}
+{% assign text = text | push: "The Dolphins, the <br /> Whale and the Sprat" %}
+{% assign text = text | push: "The Bat and the Weasel" %}
+{% assign text = text | push: "The Hawk and <br /> the Nightingale" %}
+{% assign text = text | push: "The Northwind and <br /> the Sun" %}
+{% assign text = text | push: "The Mice in Counsil" %}
+{% assign text = text | push: "Aesop and <br /> the Shipbuilders" %}
+
+{% assign images = ""     | split: "" %}
+{% assign images = images | push: "fish" %}
+{% assign images = images | push: "bat-and-weasel" %}
+{% assign images = images | push: "hawk-and-nightingale" %}
+{% assign images = images | push: "northwind" %}
+{% assign images = images | push: "mice-in-counsil" %}
+{% assign images = images | push: "shipbuilders" %}
+
 <section class="no-padding" id="showcase">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-6">
-                <a href="#" class="showcase-box">
-                    <img src="img/fish.png" class="img-responsive" alt="">
-                    <div class="showcase-box-caption">
-                        <div class="showcase-box-caption-content">
-                            <div class="project-name">
-                                The Dolphins the Whale and the Sprat
-                            </div>
-                        </div>
-                    </div>
-                </a>
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      {% for i in (0..5) %}
+      <div class="col-lg-4 showcase-box" id="asdf">
+        <img src="img/{{ images[i] }}.png" class="img-responsive" alt="">
+        <div class="showcase-box-caption">
+          <div class="showcase-box-caption-content">
+            <div class="project-name">
+              {{ text[i] }}
             </div>
-            <div class="col-lg-6">
-                <a href="#" class="showcase-box">
-                    <img src="img/bat-and-weasel.png" class="img-responsive" alt="">
-                    <div class="showcase-box-caption">
-                        <div class="showcase-box-caption-content">
-                            <div class="project-name">
-                                The Bat and the Weasel
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a href="#" class="showcase-box">
-                    <img src="img/northwind.png" class="img-responsive" alt="">
-                    <div class="showcase-box-caption">
-                        <div class="showcase-box-caption-content">
-                            <div class="project-name">
-                                The Northwind and the Sun
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a href="#" class="showcase-box">
-                    <img src="img/hawk-and-nightingale.png" class="img-responsive" alt="">
-                    <div class="showcase-box-caption">
-                        <div class="showcase-box-caption-content">
-                            <div class="project-name">
-                                The Hawk and the Nightingale
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </div>
         </div>
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
