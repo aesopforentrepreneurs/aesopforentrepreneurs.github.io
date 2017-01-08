@@ -18,6 +18,12 @@
   filter: blur($radius);
 }
 
+@mixin transform($property) {
+  -ms-transform: $property;
+  -webkit-transform: $property;
+  transform: $property;
+}
+
 @mixin button-variant($color, $background, $border) {
     color: $color;
     background-color: $background;
