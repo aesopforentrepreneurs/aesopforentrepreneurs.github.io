@@ -161,25 +161,32 @@ aside {
     }
   }
 }
+
 // Homepage Header
 
 header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  @include background-cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
+  h1 { text-shadow: -1px 2px 8px rgba(0, 0, 0, 0.5); }
+  p { text-shadow: 0px 0px 5px rgba(0, 0, 0, 1); }
+
+  .header-background {
+    @include background-size(cover);
+    // @include blur(1px);
+    background-position: center;
+    background-image: url('../img/ass-and-lion.png');
+    height: 768px;
+    z-index: 1;
+  }
 
   .header-content {
     position: relative;
     text-align: center;
     padding: 100px 15px;
     width: 100%;
+    z-index: 999;
 
-    .header-content-inner {
+    &-inner {
       h1 {
         font-weight: 700;
         text-transform: uppercase;
@@ -199,8 +206,6 @@ header {
     }
   }
   @media (min-width: 768px) {
-    min-height: 100%;
-
     .header-content {
       position: absolute;
       top: 50%;
@@ -209,7 +214,7 @@ header {
       transform: translateY(-50%);
       padding: 0 50px;
 
-      .header-content-inner {
+      &-inner {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -224,11 +229,11 @@ header {
     }
   }
 }
+
 // Sections
 .showcase-box {
   position: relative;
   display: block;
-  max-width: 650px;
   margin: 0 auto;
 
   .showcase-box-caption {
@@ -293,7 +298,18 @@ header {
     margin: 0 auto 20px;
   }
 }
+
+.row.social {
+  @media (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // Bootstrap Overrides
+
+.navbar.affix-top { opacity: 0; }
+.navbar.affix { opacity: 1; }
 
 .text-primary {
   color: $theme-primary;
@@ -318,6 +334,7 @@ header {
   border-radius: 2px;
   font-weight: 700;
   text-transform: uppercase;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
 }
 
 .btn-xl {
