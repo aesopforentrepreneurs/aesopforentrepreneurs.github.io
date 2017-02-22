@@ -219,9 +219,9 @@ header {
       }
 
       .row > a {
-        // width: 180px;
         margin-bottom: 16px;
         margin-right: 16px;
+        &:first-child { margin-right: 20px; }
       }
 
       @media (min-width: 768px) {
@@ -434,6 +434,7 @@ header {
 
 // Contact
 #follow {
+  padding-bottom: 40px;
   .row:first-child h2 { margin-bottom: 20px; }
 }
 
