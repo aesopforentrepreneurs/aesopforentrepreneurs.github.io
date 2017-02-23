@@ -1,3 +1,8 @@
+// Variables
+$header-shadow: -1px 2px 8px rgba(0, 0, 0, 0.5);
+
+// Definitions
+
 body,
 html {
   height: 100%;
@@ -174,11 +179,12 @@ aside {
 // Homepage Header
 
 header {
+
   color: white;
   position: relative;
   text-align: center;
 
-  h1 { text-shadow: -1px 2px 8px rgba(0, 0, 0, 0.5); }
+  h1 { text-shadow: $header-shadow; }
   p { text-shadow: 0px 0px 5px rgba(0, 0, 0, 1); }
 
   .header-background {
@@ -348,7 +354,10 @@ header {
 .row.social {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 28px;
+  text-shadow: $header-shadow;
+
+  a { color: white; }
 }
 
 // Bootstrap Overrides
@@ -385,6 +394,7 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
   font-weight: 700;
   text-transform: uppercase;
+  width: initial
 }
 
 .btn-xl {
