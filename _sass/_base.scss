@@ -227,7 +227,7 @@ header {
       .row > a {
         margin-bottom: 16px;
         margin-right: 16px;
-        &:first-child { right: 14px; }
+        &:first-child { left: 4px; }
       }
 
       @media (min-width: 768px) {
@@ -403,6 +403,7 @@ header {
 
 .btn-xl {
   padding: 12px 0;
+  width: 160px;
 }
 
 .navbar-right {
