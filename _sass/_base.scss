@@ -227,7 +227,7 @@ header {
       .row > a {
         margin-bottom: 16px;
         margin-right: 16px;
-        &:first-child { margin-right: 20px; }
+        &:first-child { right: 14px; }
       }
 
       @media (min-width: 768px) {
@@ -354,10 +354,14 @@ header {
 .row.social {
   display: flex;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 32px;
   text-shadow: $header-shadow;
 
   a { color: white; }
+
+  .social-icon:hover {
+    text-shadow: -1px 4px 16px rgba(0, 0, 0, .6);
+  }
 }
 
 // Bootstrap Overrides
@@ -389,16 +393,16 @@ header {
 
 .btn {
   @include sans-serif-font;
-  border-radius: 2px;
   border: 0;
+  border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
   font-weight: 700;
   text-transform: uppercase;
-  width: initial
+  // width: initial;
 }
 
 .btn-xl {
-  padding: 15px 30px;
+  padding: 12px 0;
 }
 
 .navbar-right {
@@ -445,7 +449,7 @@ header {
 
 // Contact
 #follow {
-  padding-bottom: 40px;
+  padding-bottom: 0;
   .row:first-child h2 { margin-bottom: 20px; }
 }
 
